@@ -44,7 +44,53 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             marginBottom: rhythm(1),
           }}
         />
-        <Blogmail />
+        <div
+          style={{
+            padding: `0.5rem`,
+            borderWidth: `1px`,
+            borderRadius: `0.25rem`,
+            borderColor: `#cbd5e0`,
+            borderStyle: `solid`,
+            marginBottom: `1rem`,
+          }}
+        >
+          <Blogmail
+            subscribedText="You're subscribed! 🎉"
+            styles={{
+              form: {
+                marginBottom: `0px`,
+              },
+              formDiv: {
+                display: `flex`,
+                flexWrap: `wrap`,
+              },
+              label: {
+                width: `100%`,
+                padding: `0.5rem`,
+              },
+              subscribedDiv: {
+                width: `100%`,
+                padding: `0.5rem`,
+              },
+              textInput: {
+                padding: `0.5rem`,
+                flexGrow: 1,
+                margin: `0.25rem`,
+                borderRadius: `0.125rem`,
+              },
+              submitInput: {
+                padding: `0.5rem`,
+                margin: `0.25rem`,
+                borderRadius: `0.125rem`,
+              },
+              bottomDiv: {
+                color: `#718096`,
+                ...scale(-1 / 5),
+                padding: `0.5rem`,
+              },
+            }}
+          />
+        </div>
         <footer>
           <Bio />
         </footer>
