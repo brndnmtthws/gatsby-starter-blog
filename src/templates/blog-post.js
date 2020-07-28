@@ -1,10 +1,11 @@
-import React from "react"
 import { Link, graphql } from "gatsby"
+import { rhythm, scale } from "../utils/typography"
 
 import Bio from "../components/bio"
+import Blogmail from "gatsby-plugin-blogmail"
 import Layout from "../components/layout"
+import React from "react"
 import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
@@ -43,6 +44,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             marginBottom: rhythm(1),
           }}
         />
+        <Blogmail />
         <footer>
           <Bio />
         </footer>
