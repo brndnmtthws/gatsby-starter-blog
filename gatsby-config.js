@@ -79,5 +79,11 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: "gatsby-plugin-blogmail",
+      options: {
+        newsletterId: "dbbc26e3-bf8b-4722-bb87-1a147355a023",
+      },
+    },
   ],
 }
